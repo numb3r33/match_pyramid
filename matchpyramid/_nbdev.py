@@ -5,12 +5,21 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"NumericalizePair": "00_data.ipynb",
          "Pad_Chunk_Pair": "00_data.ipynb",
          "Undict": "00_data.ipynb",
-         "load_dataset": "00_data.ipynb"}
+         "load_dataset": "00_data.ipynb",
+         "get_dls": "01_model.ipynb",
+         "get_glove_embeddings": "01_model.ipynb",
+         "get_my_vocab": "01_model.ipynb",
+         "convert_cnt_to_glove_emb": "01_model.ipynb",
+         "MatchPyramid": "01_model.ipynb",
+         "ImageTextCallback": "02_learner.ipynb",
+         "ImageTextLearner": "02_learner.ipynb"}
 
-modules = ["data.py"]
+modules = ["data.py",
+           "model.py",
+           "learner.py"]
 
 doc_url = "https://numb3r33.github.io/matchpyramid/"
 
-git_url = "https://github.com/numb3r33/matchpyramid/tree/main/"
+git_url = "https://github.com/numb3r33/matchpyramid/tree/master/"
 
 def custom_doc_links(name): return None

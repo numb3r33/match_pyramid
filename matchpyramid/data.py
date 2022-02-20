@@ -3,6 +3,14 @@
 __all__ = ['NumericalizePair', 'Pad_Chunk_Pair', 'Undict', 'load_dataset']
 
 # Cell
+import torchtext
+
+from inspect import signature
+from fastai.text.all import *
+from sklearn.feature_extraction.text import CountVectorizer
+
+
+# Cell
 class NumericalizePair(Numericalize):
     def encodes(self, o):
         return TensorText(tensor([self.o2i  [o_] for o_ in o['q1']])), TensorText(tensor([self.o2i  [o_] for o_ in o['q2']]))
